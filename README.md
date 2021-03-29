@@ -3,6 +3,9 @@
 # Text-Messaging-Classification
 Is the text spam or not?
 
+## Technology
+Python 3.7 
+
 ## Introduction
 Since 2009, text message usage in the United States has increased exponentially to roughly two trillion texts per year. 
 When comparing those numbers to phone calls and emails, the statistics become even more staggering. People in the United 
@@ -21,8 +24,23 @@ it is gathered from the University of California, Irvine. The set contains 5,571
 The 2 columns are: text message and category (spam or ham). Spam texts are listed as spam while non-spam messages are listed 
 as ham. Each instance represents a separate text message.
 
-## Technology
-Python 3.7 
+## Methodology
+For this assignment, Python 3 was used. The 3 machine learning techniques, or methods, that were used in this analysis were: 
+Multinomial Naïve Bayes, Logistical Regression, and Decision Trees. Within the Decision Trees method, random forest, 
+extra randomized trees, and gradient boosting classifiers were also used. 
+
+Multinomial Naïve Bayes is part of the sklearn package. This method is a classifier that is suitable for classification 
+with discrete features, such as word counts [3]. With the text classification based off word counts within the entire 
+text message, multinomial naïve bayes is a great technique to use.
+
+Logistical Regression is part of the sklearn package as well. The Logistical Regression method uses a function to model a binary 
+dependent variable. In this data set, the category column is a binary variable that is dependent on the text column input. 
+This allows for logistical regression to be used on this particular dataset.
+
+Like the previous techniques, Decision Trees are part of the sklearn package. Decision Trees are tree-like learning methods that make 
+multiple observations and classifications. The goal is to create a model that predicts the value of a target variable by learning 
+simple decision rules inferred from the data features. With this dataset, we are trying to do just that: predicting based off some
+unknown patterns within the text message
 
 ## Results
 ![image](https://user-images.githubusercontent.com/60716763/112786282-e4188780-9023-11eb-9d86-d63f020e9c40.png)
@@ -32,7 +50,6 @@ Python 3.7
 ![image](https://user-images.githubusercontent.com/60716763/112786180-aca9db00-9023-11eb-916d-c0e7035656c5.png)
 ![image](https://user-images.githubusercontent.com/60716763/112786187-b29fbc00-9023-11eb-8169-d690b7578ab2.png)
 ![image](https://user-images.githubusercontent.com/60716763/112786202-b8959d00-9023-11eb-8415-87e7f332705b.png)
-
 
 ## Conclusion
 The purpose of this analysis was to find a machine learning technique that could provide accurate results in
