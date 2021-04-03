@@ -4,7 +4,7 @@
 Is the text spam or not?
 
 ## Technology
-Python 3.7 
+Jupyter Notebook
 
 ## Introduction
 Since 2009, text message usage in the United States has increased exponentially to roughly two trillion texts per year. 
